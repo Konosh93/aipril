@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AiPril - Your Ultimate AI Pair Programmer & Designer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/aipril-logo.svg" alt="AiPril Logo">
+                <span>AiPril</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <div class="cta-buttons">
+                <button class="btn btn-secondary">Log In</button>
+                <button class="btn btn-primary">Sign Up Free</button>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Your Ultimate AI Pair Programmer & Designer</h1>
+                <p>Build full-stack applications instantly from natural language prompts — complete with designs, backend APIs, frontend code, and optimized deployments.</p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary btn-large">Try AiPril Now</button>
+                    <button class="btn btn-secondary btn-large">Watch Demo</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-illustration.svg" alt="AiPril in action">
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <h2>Features That Defy Reality</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Instant Code Generation</h3>
+                <p>Simply describe your app in one sentence—AiPril builds everything in seconds!</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Mind-Reading UI</h3>
+                <p>Our patented neuro-heuristics predict your design preferences with 99.9% accuracy!</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Bugless Guarantee™</h3>
+                <p>AiPril's AI-generated code has zero bugs. Ever. We promise with a straight face.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-code-branch"></i>
+                </div>
+                <h3>Tokyo Tech Stack Optimized</h3>
+                <p>Specially fine-tuned to your community's exact stack preferences, down to your IDE theme!</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-microphone-alt"></i>
+                </div>
+                <h3>Voice & Emoji Input</h3>
+                <p>Tired of typing? Just speak or drop some emojis—AiPril figures out the rest!</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Quantum Deployment</h3>
+                <p>Our servers exist in multiple dimensions simultaneously for 0ms deploy times.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="demo">
+        <h2>See AiPril in Action</h2>
+        <div class="demo-container">
+            <div class="prompt-container">
+                <h3>Tell AiPril what to build:</h3>
+                <div class="input-group">
+                    <input type="text" id="prompt-input" placeholder="e.g., 'Build me a cat photo sharing app with AI tagging'">
+                    <button id="generate-btn" class="btn btn-primary">Generate App</button>
+                </div>
+                <div class="input-options">
+                    <button class="btn btn-small btn-outline"><i class="fas fa-microphone"></i> Voice Input</button>
+                    <button class="btn btn-small btn-outline"><i class="fas fa-smile"></i> Emoji Input</button>
+                </div>
+            </div>
+            <div class="terminal-container">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="terminal-button red"></span>
+                        <span class="terminal-button yellow"></span>
+                        <span class="terminal-button green"></span>
+                    </div>
+                    <div class="terminal-title">AiPril Terminal</div>
+                </div>
+                <div id="terminal-output" class="terminal-body">
+                    <p>Welcome to AiPril v4.1.9! Your AI pair programmer is ready.</p>
+                    <p>Type a prompt above to generate your full-stack application...</p>
+                </div>
+            </div>
+            <div id="result-display" class="result-display hidden">
+                <div class="result-header">
+                    <h3>Your Generated Application</h3>
+                    <button class="btn btn-small btn-outline">Download Code</button>
+                </div>
+                <div class="result-preview">
+                    <img id="result-image" src="" alt="Generated application preview">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>What Our "Users" Say</h2>
+        <div class="testimonial-carousel">
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p>"I told AiPril to build me a 'cryptocurrency for dogs' and it actually built a fully functional barking-based blockchain. My Shiba Inu is now worth $2 million!"</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="images/testimonial-1.jpg" alt="User Avatar">
+                    <div>
+                        <h4>Definitely A. RealPerson</h4>
+                        <p>CTO, Imaginary Startups Inc.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p>"AiPril built my entire startup in 3.2 seconds. I didn't even have time to finish my coffee. Now I have too much free time and don't know what to do with myself."</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="images/testimonial-2.jpg" alt="User Avatar">
+                    <div>
+                        <h4>Totally N. OtAFake</h4>
+                        <p>Founder, Success Story LLC</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p>"I asked for a 'cat photo app' and got a dating site for felines instead. My cats are now happily married. 5/5 stars, would recommend!"</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="images/testimonial-3.jpg" alt="User Avatar">
+                    <div>
+                        <h4>Cat L. Ady</h4>
+                        <p>Professional Cat Enthusiast</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <h2>Pricing Plans</h2>
+        <div class="pricing-cards">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Starter</h3>
+                    <div class="price">
+                        <span class="amount">Free</span>
+                        <span class="period">forever</span>
+                    </div>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> 3 app generations per day</li>
+                    <li><i class="fas fa-check"></i> Basic mind reading</li>
+                    <li><i class="fas fa-check"></i> Only 1 bug per 100 lines (industry best!)</li>
+                    <li><i class="fas fa-times"></i> No quantum deployment</li>
+                    <li><i class="fas fa-times"></i> No emoji support</li>
+                </ul>
+                <button class="btn btn-outline btn-full">Get Started</button>
+            </div>
+            <div class="pricing-card featured">
+                <div class="pricing-badge">Most Popular</div>
+                <div class="pricing-header">
+                    <h3>Pro</h3>
+                    <div class="price">
+                        <span class="amount">$42</span>
+                        <span class="period">/month</span>
+                    </div>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Unlimited app generations</li>
+                    <li><i class="fas fa-check"></i> Advanced mind reading</li>
+                    <li><i class="fas fa-check"></i> Guaranteed zero bugs!</li>
+                    <li><i class="fas fa-check"></i> Quantum deployment</li>
+                    <li><i class="fas fa-check"></i> Basic emoji support</li>
+                </ul>
+                <button class="btn btn-primary btn-full">Sign Up Now</button>
+            </div>
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Enterprise</h3>
+                    <div class="price">
+                        <span class="amount">$4,999</span>
+                        <span class="period">/month</span>
+                    </div>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Infinite app generations</li>
+                    <li><i class="fas fa-check"></i> Actual telepathic code generation</li>
+                    <li><i class="fas fa-check"></i> Code so bugless it fixes other bugs</li>
+                    <li><i class="fas fa-check"></i> Time-traveling deployment (goes live yesterday)</li>
+                    <li><i class="fas fa-check"></i> Full emoji programming language</li>
+                </ul>
+                <button class="btn btn-outline btn-full">Contact Sales</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Is AiPril really as good as it sounds?</h3>
+                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely! AiPril is powered by the most advanced AI system ever created, which we've named "April's Fools." It's trained on all code ever written, plus some code that hasn't been written yet. Trust us, we're from the future.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How can AiPril guarantee zero bugs?</h3>
+                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>We've redefined the word "bug" to mean "feature you haven't appreciated yet." With this revolutionary semantic approach, our code is 100% bug-free by definition!</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What technologies does AiPril support?</h3>
+                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>All of them. Even the ones that don't exist yet. AiPril specializes in the Tokyo Tech Stack, which includes React, Node.js, TypeScript, and at least five obscure Japanese frameworks that only five developers in Shibuya understand.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How does the emoji programming work?</h3>
+                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Simply type 🐱 to create a cat photo app, 💰 for a fintech solution, or 💩 for legacy code migration. Our AI interprets your emoji intent with surprising accuracy!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/aipril-logo.svg" alt="AiPril Logo">
+                <span>AiPril</span>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#demo">Demo</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 AiPril. All rights reserved. <span class="april-fool">Happy April Fool's Day!</span></p>
+        </div>
+    </footer>
+
+    <div id="prank-reveal" class="prank-reveal">
+        <div class="prank-modal">
+            <h2>404 Intelligence Not Found</h2>
+            <img src="images/april-fools.svg" alt="April Fool's">
+            <p>Gotcha! AiPril is an April Fool's joke created for the Tokyo Tech Stack community.</p>
+            <p>While AI tools are amazing, we're not quite at the "telepathic, zero-bug, time-traveling deployment" stage... yet!</p>
+            <p>Thanks for being a good sport. Head back to Tokyo Tech Stack Exchange and share a laugh with us!</p>
+            <button id="close-prank" class="btn btn-primary">You Got Me!</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
